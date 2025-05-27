@@ -7,13 +7,29 @@
     "esbuild-dev": "node esbuild.config.js --watch"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.21",
     "esbuild": "^0.19.2",
     "glob": "^10.3.3",
-    "postcss": "^8.4.29",
+    "postcss": "^8.5.3",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^15.1.0",
     "postcss-load-config": "^4.0.1",
     "postcss-preset-env": "^9.1.2",
-    "read-cache": "^1.0.0"
-  }
+    "read-cache": "^1.0.0",
+    "tailwindcss": "^3.4.17"
+  },
+  "description": "Welcome to your new Bridgetown website! You can update this README file to provide additional context and setup information for yourself or other contributors.",
+  "main": "esbuild.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Munkun-Estudio/neb-haus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Munkun-Estudio/neb-haus/issues"
+  },
+  "homepage": "https://github.com/Munkun-Estudio/neb-haus#readme"
 }
