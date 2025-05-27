@@ -3,3 +3,5 @@
 
 layout: default
 ---
+
+<%= partial "hero" %>
