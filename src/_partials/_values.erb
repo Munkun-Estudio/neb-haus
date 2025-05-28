@@ -1,17 +1,11 @@
-<div class="flex flex-col items-center justify-center min-h-screen">
-
-  <!-- Tytuł -->
-  <h1 class="text-4xl font-bold mb-8 text-center">Our Core Values</h1>
-
-  <!-- Opis po najechaniu -->
-  <div id="circle-description" class="max-w-md text-center text-lg text-gray-600 mb-8"></div>
+<div class="flex flex-col items-center justify-center min-h-screen px-4 text-center bg-gray-50">
 
   <!-- Kontener kółek -->
-  <div class="relative w-full max-w-5xl h-[600px]">
+  <div class="relative w-full max-w-5xl h-[500px] mb-12 mt-4">
 
     <!-- Kółko: Sustainable -->
     <div
-      class="absolute top-[30%] left-[28%] w-60 h-60 rounded-full bg-green-200 bg-opacity-50 flex items-center justify-center text-center font-bold text-xl text-gray-800 drop-shadow-md shadow-md transition-transform duration-300 ease-in-out hover:scale-105"
+      class="absolute top-[30%] left-[28%] w-60 h-60 rounded-full bg-green-200 bg-opacity-50 flex items-center justify-center text-center font-bold text-xl text-gray-900 drop-shadow-md shadow-md transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer"
       onmouseenter="showDescription('In harmony with nature and our planet')"
       onmouseleave="hideDescription()"
     >
@@ -20,7 +14,7 @@
 
     <!-- Kółko: Together -->
     <div
-      class="absolute top-[30%] left-[42%] w-60 h-60 rounded-full bg-yellow-200 bg-opacity-50 flex items-center justify-center text-center font-bold text-xl text-gray-800 drop-shadow-md shadow-md transition-transform duration-300 ease-in-out hover:scale-105"
+      class="absolute top-[30%] left-[42%] w-60 h-60 rounded-full bg-yellow-200 bg-opacity-50 flex items-center justify-center text-center font-bold text-xl text-gray-900 drop-shadow-md shadow-md transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer"
       onmouseenter="showDescription('Connecting disciplines, cultures, genders & ages')"
       onmouseleave="hideDescription()"
     >
@@ -29,12 +23,31 @@
 
     <!-- Kółko: Beautiful -->
     <div
-      class="absolute top-[50%] left-[35%] w-60 h-60 rounded-full bg-blue-200 bg-opacity-50 flex items-center justify-center text-center font-bold text-xl text-gray-800 drop-shadow-md shadow-md transition-transform duration-300 ease-in-out hover:scale-105"
+      class="absolute top-[50%] left-[35%] w-60 h-60 rounded-full bg-blue-200 bg-opacity-50 flex items-center justify-center text-center font-bold text-xl text-gray-900 drop-shadow-md shadow-md transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer"
       onmouseenter="showDescription('Quality of experience, inspired by art & culture')"
       onmouseleave="hideDescription()"
     >
       Beautiful
     </div>
-
   </div>
+
+  <!-- Widoczny i centralny box z opisem -->
+  <div id="circle-description"
+    class="w-full max-w-xl bg-white border border-gray-300 rounded-xl p-6 text-center text-gray-800 text-xl shadow-lg transition-opacity duration-300 opacity-0 pointer-events-none mb-24">
+  </div>
+
 </div>
+
+<!-- JavaScript -->
+<script>
+  const descBox = document.getElementById('circle-description');
+
+  function showDescription(text) {
+    descBox.innerText = text;
+    descBox.classList.remove('opacity-0', 'pointer-events-none');
+  }
+
+  function hideDescription() {
+    descBox.classList.add('opacity-0', 'pointer-events-none');
+  }
+</script>
