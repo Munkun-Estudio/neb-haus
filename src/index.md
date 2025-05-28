@@ -5,3 +5,4 @@ layout: default
 ---
 
 <%= partial "hero" %>
+<%= partial "values" %>
