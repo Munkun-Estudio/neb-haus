@@ -6,3 +6,4 @@ layout: default
 
 <%= partial "hero" %>
 <%= partial "values" %>
+<%= partial "gallery" %>
